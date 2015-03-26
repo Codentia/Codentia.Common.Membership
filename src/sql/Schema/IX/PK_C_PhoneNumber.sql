@@ -1,0 +1,3 @@
+ALTER TABLE dbo.PhoneNumber ADD CONSTRAINT PK_C_PhoneNumber PRIMARY KEY CLUSTERED (PhoneNumberId)
+GO
+ 

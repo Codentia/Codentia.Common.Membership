@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codentia.Common.Membership", "src\app\Codentia.Common.Membership.csproj", "{B9D74272-2A9B-4293-9395-649854F99957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codentia.Common.Membership.Test", "src\test\Codentia.Common.Membership.Test.csproj", "{0431BD04-F44C-4599-8A2B-78EC4AE9F1D2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Codentia.Common.Membership.DB", "src\sql\Codentia.Common.Membership.DB.sqlproj", "{D7F196B1-E790-41C5-90ED-9B0FC09475DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9D74272-2A9B-4293-9395-649854F99957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D74272-2A9B-4293-9395-649854F99957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D74272-2A9B-4293-9395-649854F99957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D74272-2A9B-4293-9395-649854F99957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0431BD04-F44C-4599-8A2B-78EC4AE9F1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0431BD04-F44C-4599-8A2B-78EC4AE9F1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0431BD04-F44C-4599-8A2B-78EC4AE9F1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0431BD04-F44C-4599-8A2B-78EC4AE9F1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F196B1-E790-41C5-90ED-9B0FC09475DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F196B1-E790-41C5-90ED-9B0FC09475DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F196B1-E790-41C5-90ED-9B0FC09475DF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D7F196B1-E790-41C5-90ED-9B0FC09475DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F196B1-E790-41C5-90ED-9B0FC09475DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F196B1-E790-41C5-90ED-9B0FC09475DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

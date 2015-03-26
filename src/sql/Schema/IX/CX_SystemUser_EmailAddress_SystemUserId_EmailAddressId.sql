@@ -1,0 +1,3 @@
+CREATE UNIQUE CLUSTERED INDEX CX_SystemUser_EmailAddress_SystemUserId_EmailAddressId ON dbo.SystemUser_EmailAddress (SystemUserId, EmailAddressId)
+GO
+ 

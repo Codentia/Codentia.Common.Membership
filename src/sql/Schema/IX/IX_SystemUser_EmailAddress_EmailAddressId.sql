@@ -1,0 +1,3 @@
+CREATE NONCLUSTERED INDEX IX_SystemUser_EmailAddress_EmailAddressId ON dbo.SystemUser_EmailAddress (EmailAddressId)
+GO
+ 

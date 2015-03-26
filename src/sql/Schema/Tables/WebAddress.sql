@@ -1,0 +1,6 @@
+CREATE TABLE dbo.WebAddress
+(
+	WebAddressId			INT IDENTITY(1,1) NOT NULL,
+	URL						NVARCHAR(300) NOT NULL,	
+	IsDead					BIT NOT NULL DEFAULT 0
+)

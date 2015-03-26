@@ -1,0 +1,3 @@
+ALTER TABLE dbo.SystemUser_EmailAddress ADD CONSTRAINT PK_N_SystemUser_EmailAddress_SystemUserEmailAddressId PRIMARY KEY NONCLUSTERED (SystemUserEmailAddressId)
+GO
+ 

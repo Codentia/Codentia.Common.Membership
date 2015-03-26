@@ -1,0 +1,7 @@
+CREATE TABLE dbo.EmailAddress
+(
+	EmailAddressId			INT IDENTITY(1,1) NOT NULL,
+	EmailAddress			NVARCHAR(256) NOT NULL,	
+	ConfirmGuid				UNIQUEIDENTIFIER NOT NULL DEFAULT NEWID(),
+	IsConfirmed				BIT NOT NULL DEFAULT 0	
+)

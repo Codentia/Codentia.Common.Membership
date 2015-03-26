@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Codentia.Common.Membership.DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{d7f196b1-e790-41c5-90ed-9b0fc09475df}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Codentia.Common.Membership.DB</RootNamespace>
+    <AssemblyName>Codentia.Common.Membership.DB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Data" />
+    <Folder Include="Data\Always" />
+    <Folder Include="Data\Test" />
+    <Folder Include="Functions" />
+    <Folder Include="Schema" />
+    <Folder Include="Schema\IX" />
+    <Folder Include="Schema\FK" />
+    <Folder Include="Schema\Tables" />
+    <Folder Include="StoredProcedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Always\001_WebAddressType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schema\IX\CX_SystemUser_EmailAddress_SystemUserId_EmailAddressId.sql" />
+    <None Include="Schema\IX\IX_SystemUser_EmailAddress_EmailAddressId.sql" />
+    <None Include="Schema\IX\PK_C_Address_AddressId.sql" />
+    <None Include="Schema\IX\PK_C_Country_CountryId.sql" />
+    <None Include="Schema\IX\PK_C_EmailAddress_EmailAddressId.sql" />
+    <None Include="Schema\IX\PK_C_PhoneNumber.sql" />
+    <None Include="Schema\IX\PK_C_SystemUser_SystemUserId.sql" />
+    <None Include="Schema\IX\PK_C_WebAddress_WebAddressId.sql" />
+    <None Include="Schema\IX\PK_C_WebAddressType_WebAddressTypeId.sql" />
+    <None Include="Schema\IX\PK_N_SystemUser_EmailAddress_SystemUserEmailAddressId.sql" />
+    <None Include="Schema\IX\UX_Address_EmailAddressId_AddressId.sql" />
+    <None Include="Schema\IX\UX_Country_DisplayText.sql" />
+    <None Include="Schema\IX\UX_EmailAddress_EmailAddress.sql" />
+    <None Include="Schema\IX\UX_PhoneNumber_PhoneNumber.sql" />
+    <None Include="Schema\IX\UX_WebAddress_URL.sql" />
+    <None Include="Schema\FK\FK_Address_CountryId.sql" />
+    <None Include="Schema\FK\FK_Address_EmailAddressId.sql" />
+    <None Include="Schema\FK\FK_SystemUser_EmailAddress_EmailAddressId.sql" />
+    <None Include="Schema\FK\FK_SystemUser_EmailAddress_SystemUserId.sql" />
+    <None Include="Schema\FK\FK_SystemUser_PhoneNumberId.sql" />
+    <None Include="Schema\Tables\Address.sql" />
+    <None Include="Schema\Tables\Country.sql" />
+    <None Include="Schema\Tables\EmailAddress.sql" />
+    <None Include="Schema\Tables\PhoneNumber.sql" />
+    <None Include="Schema\Tables\SystemUser.sql" />
+    <None Include="Schema\Tables\SystemUser_EmailAddress.sql" />
+    <None Include="Schema\Tables\WebAddress.sql" />
+    <None Include="Schema\Tables\WebAddressType.sql" />
+    <None Include="StoredProcedures\Address_Create.sql" />
+    <None Include="StoredProcedures\Address_ExistsByEmailAndAddressIds.sql" />
+    <None Include="StoredProcedures\Address_ExistsById.sql" />
+    <None Include="StoredProcedures\Address_GetByCookie.sql" />
+    <None Include="StoredProcedures\Address_GetById.sql" />
+    <None Include="StoredProcedures\Address_Update.sql" />
+    <None Include="StoredProcedures\Country_ExistsbyDisplayText.sql" />
+    <None Include="StoredProcedures\Country_ExistsById.sql" />
+    <None Include="StoredProcedures\Country_GetAll.sql" />
+    <None Include="StoredProcedures\Country_GetById.sql" />
+    <None Include="StoredProcedures\Country_GetIdByDisplayText.sql" />
+    <None Include="StoredProcedures\DataLoad_Roles.sql" />
+    <None Include="StoredProcedures\DataLoad_UserDetails.sql" />
+    <None Include="StoredProcedures\EmailAddress_Confirm.sql" />
+    <None Include="StoredProcedures\EmailAddress_Create.sql" />
+    <None Include="StoredProcedures\EmailAddress_ExistsByEmailAddress.sql" />
+    <None Include="StoredProcedures\EmailAddress_ExistsById.sql" />
+    <None Include="StoredProcedures\EmailAddress_GetAddresses.sql" />
+    <None Include="StoredProcedures\EmailAddress_GetByCookie.sql" />
+    <None Include="StoredProcedures\EmailAddress_GetByEmailAddress.sql" />
+    <None Include="StoredProcedures\EmailAddress_GetById.sql" />
+    <None Include="StoredProcedures\EmailAddress_GetLocalUserId.sql" />
+    <None Include="StoredProcedures\MembershipUser_ExistsById.sql" />
+    <None Include="StoredProcedures\PhoneNumber_Create.sql" />
+    <None Include="StoredProcedures\PhoneNumber_GetById.sql" />
+    <None Include="StoredProcedures\SystemUser_AssociateToEmailAddress.sql" />
+    <None Include="StoredProcedures\SystemUser_Create.sql" />
+    <None Include="StoredProcedures\SystemUser_DissociateFromEmailAddress.sql" />
+    <None Include="StoredProcedures\SystemUser_ExistsById.sql" />
+    <None Include="StoredProcedures\SystemUser_GetByEmail.sql" />
+    <None Include="StoredProcedures\SystemUser_GetById.sql" />
+    <None Include="StoredProcedures\SystemUser_GetByUserId.sql" />
+    <None Include="StoredProcedures\SystemUser_GetEmailAddresses.sql" />
+    <None Include="StoredProcedures\SystemUser_SetForcePassword.sql" />
+    <None Include="StoredProcedures\SystemUser_SetRole.sql" />
+    <None Include="StoredProcedures\SystemUser_Update.sql" />
+    <None Include="StoredProcedures\Util_PopulateTableFromCSV.sql" />
+    <None Include="StoredProcedures\WebAddress_Create.sql" />
+    <None Include="StoredProcedures\WebAddress_ExistsById.sql" />
+    <None Include="StoredProcedures\WebAddress_ExistsByURL.sql" />
+    <None Include="StoredProcedures\WebAddress_GetById.sql" />
+    <None Include="StoredProcedures\WebAddress_GetByURL.sql" />
+    <None Include="StoredProcedures\WebAddress_UpdateAsDead.sql" />
+    <None Include="StoredProcedures\WebAddressType_GetAll.sql" />
+  </ItemGroup>
+</Project>
