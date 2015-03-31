@@ -55,7 +55,7 @@ namespace Codentia.Common.Membership.Providers
 
                 for (int i = 0; i < membership.Providers.Count; i++)
                 {
-                    if (membership.Providers[i].Type.ToLower().StartsWith("mattchedit"))
+                    if (membership.Providers[i].Type.ToLower().StartsWith("codentia"))
                     {
                         providerSettings = membership.Providers[i];
                     }
