@@ -38,20 +38,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Codentia.Common.Config">
-      <HintPath>..\..\packages\Codentia.Common.Config.dll.2.0.0-dev-20160211163331\lib\Codentia.Common.Config.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Config.dll.2.0.0-dev-20160216095134\lib\Codentia.Common.Config.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Data">
-      <HintPath>..\..\packages\Codentia.Common.Data.dll.4.0.0-dev-20160211162639\lib\Codentia.Common.Data.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Data.dll.4.0.0-dev-20160216094829\lib\Codentia.Common.Data.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Helper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Codentia.Common.Helper.dll.2.0.0-dev-20151015190952\lib\Codentia.Common.Helper.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Codentia.Common.Logging">
-      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev-20160211163010\lib\Codentia.Common.Logging.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0-dev-20160216095044\lib\Codentia.Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Types">
-      <HintPath>..\..\packages\Codentia.Common.Types.dll.2.0.0-dev-20160131201712\lib\Codentia.Common.Types.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Types.dll.2.0.0-dev-20160216094650\lib\Codentia.Common.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
