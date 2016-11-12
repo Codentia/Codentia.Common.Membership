@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Codentia.Common.Config">
-      <HintPath>..\..\packages\Codentia.Common.Config.dll.1.1.1.115\lib\Codentia.Common.Config.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Config.dll.2.0.0.1\lib\Codentia.Common.Config.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Data">
       <HintPath>..\..\packages\Codentia.Common.Data.dll.3.0.0.59\lib\Codentia.Common.Data.dll</HintPath>
@@ -49,15 +49,16 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Codentia.Common.Logging">
-      <HintPath>..\..\packages\Codentia.Common.Logging.dll.2.2.0.120\lib\Codentia.Common.Logging.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Logging.dll.3.0.0.1\lib\Codentia.Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Common.Types">
-      <HintPath>..\..\packages\Codentia.Common.Types.dll.1.1.2.22\lib\Codentia.Common.Types.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Common.Types.dll.2.0.0.5\lib\Codentia.Common.Types.dll</HintPath>
     </Reference>
     <Reference Include="Codentia.Test">
-      <HintPath>..\..\packages\Codentia.Test.dll.1.2.0.79\lib\Codentia.Test.dll</HintPath>
+      <HintPath>..\..\packages\Codentia.Test.dll.2.0.0.1\lib\Codentia.Test.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
